@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Líder Transportes | Fretamento, Turismo e Operações Corporativas</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-900/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#inicio" class="flex items-center gap-3 transition hover:opacity-90">
+        <img src="logo.png" alt="Líder Transportes" class="h-12 w-auto object-contain md:h-14" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex">
+        <a href="#inicio" class="transition hover:text-blue-400">Início</a>
+        <a href="#sobre" class="transition hover:text-blue-400">Sobre</a>
+        <a href="#servicos" class="transition hover:text-blue-400">Serviços</a>
+        <a href="#frota" class="transition hover:text-blue-400">Frota</a>
+        <a href="#galeria" class="transition hover:text-blue-400">Galeria</a>
+        <a href="#ferramentas" class="transition hover:text-blue-400">Ferramentas</a>
+        <a href="lider-rastreamento.html" class="flex items-center gap-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-400 transition hover:bg-blue-500/20">
+          <i data-lucide="shield-check" class="h-3.5 w-3.5"></i>
+          Rastreamento
+        </a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="hidden items-center gap-3 sm:flex">
+        <a href="https://www.instagram.com/lider_transportes" target="_blank" rel="noreferrer" class="rounded-xl border border-slate-700 bg-slate-800/50 p-2.5 text-slate-300 transition hover:border-slate-600 hover:text-white">
+          <i data-lucide="instagram" class="h-5 w-5"></i>
+        </a>
+        <a href="https://wa.me/5534999454774" target="_blank" rel="noreferrer" class="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 hover:shadow-blue-600/30">
+          <i data-lucide="message-circle" class="h-4 w-4"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="rounded-xl border border-slate-700 bg-slate-800 p-2 text-slate-300 lg:hidden" onclick="toggleMenu()">
+        <i data-lucide="menu" class="h-6 w-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="hidden border-b border-slate-800 bg-slate-900 px-6 py-6 lg:hidden">
+      <div class="flex flex-col gap-4 text-slate-300">
+        <a href="#inicio" onclick="toggleMenu()" class="hover:text-blue-400">Início</a>
+        <a href="#sobre" onclick="toggleMenu()" class="hover:text-blue-400">Sobre</a>
+        <a href="#servicos" onclick="toggleMenu()" class="hover:text-blue-400">Serviços</a>
+        <a href="#frota" onclick="toggleMenu()" class="hover:text-blue-400">Frota</a>
+        <a href="#galeria" onclick="toggleMenu()" class="hover:text-blue-400">Galeria</a>
+        <a href="#ferramentas" onclick="toggleMenu()" class="hover:text-blue-400">Ferramentas</a>
+        <a href="lider-rastreamento.html" onclick="toggleMenu()" class="text-blue-400 font-semibold">Líder Rastreamento</a>
+        <div class="pt-4 flex gap-3">
+          <a href="https://wa.me/5534999454774" target="_blank" class="flex-1 text-center rounded-xl bg-blue-600 py-3 text-sm font-semibold text-white">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative overflow-hidden py-20 lg:py-32">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-slate-900 to-slate-950"></div>
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid items-center gap-12 lg:grid-cols-12">
+        
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400">
+            <i data-lucide="award" class="h-4 w-4"></i>
+            <span>32 anos de tradição e inovação</span>
+          </div>
+          
+          <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Transporte executivo com <span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">máxima segurança</span> e excelência.
+          </h1>
+          
+          <p class="mt-6 text-lg text-slate-300 leading-relaxed max-w-2xl">
+            Especialistas em fretamento corporativo, viagens de turismo e logística dedicada de passageiros. Frota moderna, rastreada e pronta para qualquer viagem.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#contato" class="flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:bg-blue-500 hover:scale-[1.02]">
+              <span>Solicitar Orçamento</span>
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+            <a href="#frota" class="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800/60 px-7 py-3.5 text-sm font-semibold text-slate-200 transition hover:bg-slate-800 hover:border-slate-600">
+              Conhecer a Frota
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl border border-slate-800 bg-slate-800/40 p-6 backdrop-blur-xl shadow-2xl">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-700/50 bg-slate-900/60 p-5">
+                <i data-lucide="shield" class="h-8 w-8 text-blue-400"></i>
+                <h3 class="mt-3 font-semibold text-white">Segurança Total</h3>
+                <p class="mt-1 text-xs text-slate-400">Telemetria avançada e câmeras embarcadas.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-700/50 bg-slate-900/60 p-5">
+                <i data-lucide="clock" class="h-8 w-8 text-blue-400"></i>
+                <h3 class="mt-3 font-semibold text-white">Pontualidade</h3>
+                <p class="mt-1 text-xs text-slate-400">Compromisso rigoroso com os horários.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-700/50 bg-slate-900/60 p-5">
+                <i data-lucide="user-check" class="h-8 w-8 text-blue-400"></i>
+                <h3 class="mt-3 font-semibold text-white">Motoristas VIP</h3>
+                <p class="mt-1 text-xs text-slate-400">Equipe altamente treinada e certificada.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-700/50 bg-slate-900/60 p-5">
+                <i data-lucide="sparkles" class="h-8 w-8 text-blue-400"></i>
+                <h3 class="mt-3 font-semibold text-white">Conforto Premium</h3>
+                <p class="mt-1 text-xs text-slate-400">Veículos novos com ar, Wi-Fi e poltronas Soft.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section id="sobre" class="border-t border-slate-800/80 bg-slate-950 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Quem Somos</span>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Soluções completas em mobilidade e transporte terrestre
+          </h2>
+          <p class="mt-6 text-slate-300 leading-relaxed">
+            A Líder Transportes atua há mais de três décadas no mercado, oferecendo soluções em transporte de passageiros para empresas, turismo e operações dedicadas. Nossa atuação é guiada pela segurança, pelo compromisso com horários e pela busca contínua por qualidade.
+          </p>
+          <p class="mt-4 text-slate-400 leading-relaxed">
+            Investimos constantemente em treinamento de motoristas, qualidade de vida dos colaboradores e tecnologia de ponta para otimizar nossa operação[cite: 1, 2].
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div class="flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400">
+              <i data-lucide="target" class="h-6 w-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white">Missão</h3>
+              <p class="mt-1 text-sm text-slate-400">Transportar pessoas com segurança, eficiência e pontualidade[cite: 1, 2].</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400">
+              <i data-lucide="eye" class="h-6 w-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white">Visão</h3>
+              <p class="mt-1 text-sm text-slate-400">Ser referência regional reconhecida pela excelência e inovação[cite: 1, 2].</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400">
+              <i data-lucide="heart" class="h-6 w-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white">Valores</h3>
+              <p class="mt-1 text-sm text-slate-400">Segurança, respeito, pontualidade e melhoria contínua[cite: 1, 2].</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços Section -->
+  <section id="servicos" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Nossos Serviços</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Atendemos diferentes demandas com máxima precisão</h2>
+      </div>
+
+      <div class="mt-16 grid gap-8 md:grid-cols-3">
+        <div class="group relative rounded-3xl border border-slate-800 bg-slate-900/40 p-8 transition hover:border-blue-500/50 hover:bg-slate-800/40">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/10 text-blue-400 transition group-hover:bg-blue-600 group-hover:text-white">
+            <i data-lucide="building-2" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mt-6 text-xl font-bold text-white">Fretamento Corporativo</h3>
+          <p class="mt-3 text-sm text-slate-400 leading-relaxed">Transporte diário contínuo de colaboradores para empresas com foco em pontualidade e segurança[cite: 1, 2].</p>
+        </div>
+
+        <div class="group relative rounded-3xl border border-slate-800 bg-slate-900/40 p-8 transition hover:border-blue-500/50 hover:bg-slate-800/40">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/10 text-blue-400 transition group-hover:bg-blue-600 group-hover:text-white">
+            <i data-lucide="compass" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mt-6 text-xl font-bold text-white">Turismo e Viagens</h3>
+          <p class="mt-3 text-sm text-slate-400 leading-relaxed">Atendimento para excursões, traslados, eventos e viagens intermunicipais/interestaduais com todo o conforto[cite: 1, 2].</p>
+        </div>
+
+        <div class="group relative rounded-3xl border border-slate-800 bg-slate-900/40 p-8 transition hover:border-blue-500/50 hover:bg-slate-800/40">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/10 text-blue-400 transition group-hover:bg-blue-600 group-hover:text-white">
+            <i data-lucide="settings-2" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mt-6 text-xl font-bold text-white">Operações Sob Medida</h3>
+          <p class="mt-3 text-sm text-slate-400 leading-relaxed">Projetos personalizados para atender rotinas especiais, logística de eventos e roteiros exclusivos[cite: 1, 2].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frota Section -->
+  <section id="frota" class="border-t border-slate-800/80 bg-slate-950 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Nossa Frota</span>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Veículos Executivos e de Alto Padrão</h2>
+        </div>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-2">
+        
+        <!-- Renault Master -->
+        <div id="renault-master" class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">16 Lugares VIP</span>
+            <span class="text-xs font-medium text-slate-400">Modelo 2025</span>
+          </div>
+          <h3 class="mt-4 text-2xl font-bold text-white">Renault Master Executiva VIP</h3>
+          <p class="mt-2 text-sm text-slate-400">Poltronas Soft Luxo, Smart TV, tomadas individuais, iluminação LED, piso madeirado e câmera de ré[cite: 1, 2].</p>
+          
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <img src="Master1.jpg" alt="Master 1" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+            <img src="Master2.jpg" alt="Master 2" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+          </div>
+        </div>
+
+        <!-- Iveco Daily -->
+        <div id="iveco-daily" class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">20 Lugares</span>
+            <span class="text-xs font-medium text-slate-400">Executivo</span>
+          </div>
+          <h3 class="mt-4 text-2xl font-bold text-white">Iveco Daily</h3>
+          <p class="mt-2 text-sm text-slate-400">20 poltronas reclináveis em couro sintético, ar-condicionado de alta capacidade e amplo porta-malas[cite: 1, 2].</p>
+          
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <img src="Iveco1.JPG" alt="Iveco 1" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+            <img src="Iveco2.jpg" alt="Iveco 2" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+          </div>
+        </div>
+
+        <!-- Sprinter -->
+        <div id="sprinter-415" class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">15 Lugares</span>
+            <span class="text-xs font-medium text-slate-400">Hi-Tech</span>
+          </div>
+          <h3 class="mt-4 text-2xl font-bold text-white">Mercedes-Benz Sprinter 415</h3>
+          <p class="mt-2 text-sm text-slate-400">Poltronas reclináveis, carregadores USB, cortinas de privacidade e kit multimídia completo[cite: 1, 2].</p>
+          
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <img src="MB1.jpg" alt="Sprinter 1" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+            <img src="MB2.jpg" alt="Sprinter 2" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+          </div>
+        </div>
+
+        <!-- Volare Fly 10 -->
+        <div id="fly10" class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">31 Lugares + Banheiro</span>
+            <span class="text-xs font-medium text-slate-400">Micro-ônibus Premium</span>
+          </div>
+          <h3 class="mt-4 text-2xl font-bold text-white">Volare Fly 10 Executivo</h3>
+          <p class="mt-2 text-sm text-slate-400">Banheiro, geladeira, Wi-Fi, suspensão a ar, carregadores em todas as poltronas e ar digital[cite: 1, 2].</p>
+          
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <img src="Volare1.jpg" alt="Volare 1" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+            <img src="Volare2.jpg" alt="Volare 2" class="h-40 w-full cursor-pointer rounded-2xl object-cover hover:opacity-80 transition" onclick="openLightbox(this.src)" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria Section -->
+  <section id="galeria" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Galeria</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Registros das nossas operações</h2>
+      </div>
+
+      <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <img src="galeria-1.jpg" class="h-64 w-full cursor-pointer rounded-2xl object-cover transition hover:scale-[1.02]" onclick="openLightbox(this.src)" />
+        <img src="galeria-2.jpg" class="h-64 w-full cursor-pointer rounded-2xl object-cover transition hover:scale-[1.02]" onclick="openLightbox(this.src)" />
+        <img src="galeria-3.jpg" class="h-64 w-full cursor-pointer rounded-2xl object-cover transition hover:scale-[1.02]" onclick="openLightbox(this.src)" />
+        <img src="galeria-4.jpg" class="h-64 w-full cursor-pointer rounded-2xl object-cover transition hover:scale-[1.02]" onclick="openLightbox(this.src)" />
+        <img src="galeria-5.jpg" class="h-64 w-full cursor-pointer rounded-2xl object-cover transition hover:scale-[1.02]" onclick="openLightbox(this.src)" />
+        <img src="galeria-6.jpg" class="h-64 w-full cursor-pointer rounded-2xl object-cover transition hover:scale-[1.02]" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Ferramentas Internas -->
+  <section id="ferramentas" class="border-t border-slate-800/80 bg-slate-950 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Plataformas</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Sistemas e Telemetria Interna</h2>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <a href="https://app.yuv.com.br/login" target="_blank" class="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition hover:border-blue-500/50 hover:bg-slate-800">
+          <i data-lucide="video" class="h-8 w-8 text-blue-400"></i>
+          <h3 class="mt-4 font-bold text-white group-hover:text-blue-400">Yuv Plataforma</h3>
+          <p class="mt-1 text-xs text-slate-400">Vídeo Telemetria Avançada[cite: 1, 2]</p>
+        </a>
+
+        <a href="https://acesso.smartgps.com.br/" target="_blank" class="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition hover:border-blue-500/50 hover:bg-slate-800">
+          <i data-lucide="navigation" class="h-8 w-8 text-blue-400"></i>
+          <h3 class="mt-4 font-bold text-white group-hover:text-blue-400">SmartGPS</h3>
+          <p class="mt-1 text-xs text-slate-400">Sistema de Rastreamento[cite: 1, 2]</p>
+        </a>
+
+        <a href="https://app.webrota.com.br/login" target="_blank" class="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition hover:border-blue-500/50 hover:bg-slate-800">
+          <i data-lucide="map-pin" class="h-8 w-8 text-blue-400"></i>
+          <h3 class="mt-4 font-bold text-white group-hover:text-blue-400">WebRotas</h3>
+          <p class="mt-1 text-xs text-slate-400">Gestão de Frotas e Rotas[cite: 1, 2]</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Contato</span>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Entre em contato e solicite sua cotação</h2>
+          <p class="mt-4 text-slate-400 leading-relaxed">Nossa equipe está pronta para responder suas dúvidas e montar uma proposta personalizada para a sua necessidade[cite: 1, 2].</p>
+
+          <div class="mt-8 space-y-4">
+            <div class="flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-4">
+              <i data-lucide="phone" class="h-6 w-6 text-blue-400"></i>
+              <div>
+                <p class="text-xs text-slate-400">Telefone</p>
+                <p class="font-semibold text-white">(34) 3242-4667[cite: 1, 2]</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-4">
+              <i data-lucide="map-pin" class="h-6 w-6 text-blue-400"></i>
+              <div>
+                <p class="text-xs text-slate-400">Endereço</p>
+                <p class="font-semibold text-white">Av. Dr. Oswaldo Pieruccetti, 358 - Araguari, MG[cite: 1, 2]</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-4">
+              <i data-lucide="mail" class="h-6 w-6 text-blue-400"></i>
+              <div>
+                <p class="text-xs text-slate-400">E-mail</p>
+                <p class="font-semibold text-white">aglider.wattila@gmail.com[cite: 1, 2]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 backdrop-blur-xl">
+          <h3 class="text-xl font-bold text-white">Envie uma mensagem direta</h3>
+          <form class="mt-6 space-y-4" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+            <div>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Nome Completo</label>
+              <input type="text" required class="w-full rounded-xl border border-slate-700 bg-slate-800/60 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none" placeholder="Seu nome">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Telefone / WhatsApp</label>
+              <input type="tel" required class="w-full rounded-xl border border-slate-700 bg-slate-800/60 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none" placeholder="(34) 99999-9999">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-400 mb-1">Mensagem ou Detalhes da Viagem</label>
+              <textarea rows="4" required class="w-full rounded-xl border border-slate-700 bg-slate-800/60 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none" placeholder="Descreva sua necessidade..."></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-xl bg-blue-600 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500">
+              Enviar Solicitação
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-12">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Líder Transportes" class="h-10 w-auto object-contain" />
+        <span class="text-xs text-slate-500">© 2026 Líder Transportes e Serviços Ltda. Todos os direitos reservados.</span>
+      </div>
+      <div class="flex gap-6 text-xs text-slate-400">
+        <a href="#inicio" class="hover:text-white">Início</a>
+        <a href="#sobre" class="hover:text-white">Sobre</a>
+        <a href="#frota" class="hover:text-white">Frota</a>
+        <a href="#contato" class="hover:text-white">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/90 p-4 backdrop-blur-sm">
+    <button onclick="closeLightbox()" class="absolute right-6 top-6 rounded-xl bg-slate-800 p-3 text-white hover:bg-slate-700">
+      <i data-lucide="x" class="h-6 w-6"></i>
+    </button>
+    <img id="lightbox-image" src="" class="max-h-[85vh] max-w-[90vw] rounded-2xl object-contain shadow-2xl" />
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const image = document.getElementById('lightbox-image');
+      image.src = src;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('flex');
+      lightbox.classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
